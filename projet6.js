@@ -2,6 +2,7 @@ function tester()
 {
   var dep = document.getElementById('div2').style.display="block";
   var btn = document.getElementById("butt");
+ 
 }
 function teste()
 {
