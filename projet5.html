@@ -8,25 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="image/photo_2022-09-01_11-48-20.jpg" alt="">
-        </div>
-    </nav>
+
         <h1>GESTION DE BUDGET </h1>
         <table class="tab">
             <tr>
-                <th class="bud"><button>BUDGET</button>
+                <th><button>BUDGET</button>
                 500000</th>
-                <th class="dep"><button>DEPENSE</button>
+                <th><button>DEPENSE</button>
                 375000</th>
-                <th class="sol"><button >SOLDE</button> 
+                <th><button >SOLDE</button> 
                 125000</th>
             </tr>
         </table>
 <div> 
     <h2>LISTE DES DEPENSES</h2>
-    <button class="butt">Ajouter DEPENSE</button><br>
+    <button id="butt" type="button" onclick="tester()">Ajouter DEPENSE</button><br>
     <table>
         <tr>
             <th>TITRE</th>
@@ -34,18 +30,18 @@
             <th>ACTION</th>
         </tr>
         <tr>
-            <td class="blue"><center>NOURITUR</center></td>
-            <td class="orange"> <center>60000</center></td>
-            <td class="rouge"> <center> <button>Modifier</button>|<button> Supprimer</button> </center> </td>
+            <td>NOURITUR</td>
+            <td>60000</td>
+            <td> <button>Modifier</button>|<button> Supprimer</button>  </td>
         </tr>
         <tr>
-            <td class="pink"><center>FACTURE</center></td>
-            <td class="marron"><center>39000</center></td>
-            <td class="rouge"><center><button>Modifier</button>|<button> Supprimer</button></center></td>
+            <td>FACTURE</td>
+            <td>39000</td>
+            <td><button>Modifier</button>|<button> Supprimer</button></td>
         </tr>
     </table>
     <h2>LISTE DES REVENUS</h2>
-    <button class="butt">Ajouter REVENUS</button><br>
+    <button id="buttt" type="button" onclick="teste()">Ajouter REVENUS</button><br>
     <table>
         <tr>
             <th>TITRE</th>
@@ -53,44 +49,47 @@
             <th>ACTION</th>
         </tr>
         <tr>
-            <td class="blue"><center>SALAIRE</center></td>
-            <td class="orange"> <center>250000</center></td>
-            <td class="rouge"> <center> <button>Modifier</button>|<button>Supprimer</button> </center> </td>
+            <td>SALAIRE</td>
+            <td>250000</td>
+            <td><button>Modifier</button>|<button>Supprimer</button></td>
         </tr>
         <tr>
-            <td class="pink"><center>BONUS</center></td>
-            <td class="marron"><center>50000</center></td>
-            <td class="rouge"><center><button>Modifier</button>|<button>Supprimer</button></center></td>
+            <td>BONUS</td>
+            <td>50000</td>
+            <td><button>Modifier</button>|<button>Supprimer</button></td>
         </tr>
     </table>
 </div><br>
-<div class="div2">
-    <table class="table">
-        <caption> <h3>Ajouter DEPENSE</h3> </caption> <br>
-        <tr>
-            <th>TITRE</th>
-            <th>MONTANT</th>
-        </tr>
-        <tr>
-            <td class="blue"><center>Nouriture</center></td>
-            <td class="orange"> <center>7000</center></td>
-        </tr>
-    </table>
-    <button class="but">Vilider</button>
-</div>
-<div class="div3">
-    <table class="tables"><br>
-        <caption><h3>Ajouter REVENUS</h3></caption>
-        <tr>
-            <th>TITRE</th>
-            <th>MONTANT</th>
-        </tr>
-        <tr>
-            <td class="blue"><center>SALAIRE</center></td>
-            <td class="orange"> <center>70000</center></td>
-        </tr>
-    </table>
-    <button class="buts">Vilider</button>
-</div>
+<!--<div id="conteneur">-->
+    <div  class="dep" id="div2">
+        <table class="table">
+            <caption> <h3>Ajouter DEPENSE</h3> </caption> <br>
+            <tr>
+                <th>TITRE</th>
+                <th>MONTANT</th>
+            </tr>
+            <tr>
+                <td>Nouriture</td>
+                <td>7000</td>
+            </tr>
+        </table>
+        <button id="but">Vilider</button>
+    </div>
+    <div class="rev" id="div3">
+        <table class="tables"><br>
+            <caption><h3>Ajouter REVENUS</h3></caption>
+            <tr>
+                <th>TITRE</th>
+                <th>MONTANT</th>
+            </tr>
+            <tr>
+                <td>SALAIRE</td>
+                <td>70000</td>
+            </tr>
+        </table>
+        <button id="buts">Vilider</button>
+    </div>
+<!--</div>-->
+<script src="projet6.js"></script>
 </body>
 </html>
